@@ -1,4 +1,4 @@
-package inheritance.whatsaspp;
+package inheritance2.whatsaspp;
 
 public class WhatsappV1 {
     void showStory(){

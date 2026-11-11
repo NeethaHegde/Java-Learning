@@ -1,4 +1,4 @@
-package inheritance.whatsaspp;
+package inheritance2.whatsaspp;
 
 public class Main {
     public static void main(String[] args) {

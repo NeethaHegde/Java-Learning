@@ -1,4 +1,4 @@
-package inheritance.whatsaspp;
+package inheritance2.whatsaspp;
 
 public class WhatsappV2 extends WhatsappV1 {
     public void metaAi(){
