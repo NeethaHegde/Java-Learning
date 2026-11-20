@@ -10,14 +10,18 @@ public class ATM extends Thread {
         this.amount=amount;
     }
 
-    public void disp(){
+    public void disp() {
         if(op=="withdraw"){
-            bank.withdraw(amount);
-            bank.getBal();
+           try{
+             bank.withdraw(amount);
+            // bank.getBal();
+           } catch(BankException e){
+            System.out.println(e.getMessage());
+           }
         }
-        else if(op=="deposit"){
-            bank.deposit(amount);
-            bank.getBal();
+        else if(op=="deposite"){
+            bank.deposite(amount);
+            // bank.getBal();
         }
         else if(op=="balance"){
             bank.getBal();
