@@ -8,6 +8,7 @@ public class Main {
         ATM atm=new ATM(bank, "withdraw", 1000);
         PhonePay pay2 = new PhonePay(bank, "deposite", 5000);
 
+
         pay.join(100);
         pay.start();
         pay2.join(100);
@@ -15,8 +16,10 @@ public class Main {
 
         atm.join(100);
         atm.start();
+     
+        Thread.sleep(1000);
 
-
+        bank.getBal();
     }
 
 }
