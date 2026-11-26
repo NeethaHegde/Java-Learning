@@ -36,7 +36,7 @@ public class Example2 {
         System.out.println(sum2);
         long paraend = System.currentTimeMillis();
 
-        System.out.println("Normal stream time: " +(normstart - normend));
+        System.out.println("Normal stream time: " +(normend - normstart));
         System.out.println("Parallel Stream: "+ (paraend - parastart));
     }
 }
